@@ -1,5 +1,8 @@
+set nocompatible
+
 call plug#begin('~/.vim/plugged')
 
+Plug 'sheerun/vim-polyglot'
 Plug 'bhurlow/vim-parinfer'
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-salve'
@@ -12,6 +15,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'bagrat/vim-buffet'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
 call plug#end()
 
