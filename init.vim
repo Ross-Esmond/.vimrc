@@ -13,7 +13,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'bagrat/vim-buffet'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 Plug 'kyazdani42/nvim-web-devicons'
@@ -52,18 +51,6 @@ function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
-lua << ENDLUA
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "javascript", "typescript", "markdown" },
-
-  auto_install = true,
-
-  highlight = {
-    enable = true,
-  },
-}
-ENDLUA
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
