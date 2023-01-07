@@ -50,8 +50,11 @@ Install language servers for CoC using [this guide][CoC-lsp].
 
 Install the correct font-patch for your terminals font using [NerdFonts][nerdfonts].
 
+Install [Watchmen][watchmen] so that file renaming will update paths.
+
 [neovim]: https://github.com/neovim/neovim/wiki/Installing-Neovim
 [plug]: https://www.linode.com/docs/guides/how-to-install-neovim-and-plugins-with-vim-plug/
 [nvm]: https://github.com/nvm-sh/nvm/blob/master/README.md
 [CoC-lsp]: https://github.com/neoclide/coc.nvim/wiki/Language-servers
 [nerdfonts]: https://www.nerdfonts.com/font-downloads
+[watchmen]: https://facebook.github.io/watchman/
