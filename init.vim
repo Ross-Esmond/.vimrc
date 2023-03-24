@@ -2,6 +2,7 @@ set nocompatible
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'sheerun/vim-polyglot'
 Plug 'bhurlow/vim-parinfer'
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-salve'
