@@ -19,6 +19,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-orgmode/orgmode'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
@@ -143,3 +144,6 @@ require('orgmode').setup({
 })
 
 EOF
+
+imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+let g:copilot_no_tab_map = v:true
